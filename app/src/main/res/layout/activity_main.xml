@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Quiz app"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="52dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What city was the first capital of the United States?"
+                    android:textColor="#4B69FF"
+                    android:textStyle="bold|italic" />
+
+
+                <EditText
+                    android:id="@+id/edit_text_us_capitol_answer_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Write Your Answer Here." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What were the names of Columbus' ships?"
+                    android:textColor="#4B69FF"
+                    android:textStyle="bold|italic" />
+
+                <RadioGroup
+                    android:id="@+id/first_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/first_radio_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="the Niña, the Pinta, and the Santa Maria" />
+
+                    <RadioButton
+                        android:id="@+id/first_radio_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="the Santa Maria, the Santa Clara, and unknown" />
+
+                    <RadioButton
+                        android:id="@+id/first_radio_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="the Sir Edward Codrington" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="United States cities(there are more than one answer)"
+                    android:textColor="#4B69FF"
+                    android:textStyle="bold|italic" />
+
+                <CheckBox
+                    android:id="@+id/first_check_box_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="San Diego" />
+
+                <CheckBox
+                    android:id="@+id/first_check_box_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Copenhagen" />
+
+                <CheckBox
+                    android:id="@+id/first_check_box_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="San Francisco" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="what is the smallest US state?"
+                    android:textColor="#4B69FF"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/edit_text_smallest_us_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Write Your Answer Here." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Who was the first president to live in the White House?"
+                    android:textColor="#4B69FF"
+                    android:textStyle="bold|italic" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/second_radio_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="John Adams"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/second_radio_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Joe Biden" />
+
+                    <RadioButton
+                        android:id="@+id/second_radio_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Herbert Clark Hoover" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="lakes in America?(there are more than one answer)"
+                    android:textColor="#4B69FF"
+                    android:textStyle="bold|italic" />
+
+                <CheckBox
+                    android:id="@+id/second_check_box_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Iliamna Lake" />
+
+                <CheckBox
+                    android:id="@+id/second_check_box_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lake Superior" />
+
+                <CheckBox
+                    android:id="@+id/second_check_box_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Becharof Lake" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="I'm done"
+                    android:onClick="imDone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
